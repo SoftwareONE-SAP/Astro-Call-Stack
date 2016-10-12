@@ -1,42 +1,12 @@
 /**
  * Activity   - Commented out no callstack error.
- * Resolve
- * mediaLink
  * AS.Object - inherits resolvable
  */
 
-/**
- * Declare the AS exportable symbol
- * @type {Object}
- */
 AS = {};
 
-/**
- * Namespace for storing verbs
- */
-AS.VERBS = {};
-
-/**
- * Resolvable Objects
- */
-AS.Resolvable = Astro.Class.create({
-	name: 'AS.Resolvable',
-	validators: {
-		id: [
-			{type: 'required'}
-		]
-	},
-	methods: {
-		resolve: function() {
-			console.warn("Unable to resolve document, no resolver method specified!");
-			return this;
-		}
-	}
-});
-
-// AS.Object = Astro.Class.create({
-AS.Object = AS.Resolvable.inherit({
-	name: 'AS.Object',
+AS.Object = Astro.Class.create({
+	name:      'AS.Object',
 	typeField: 'objectType',
 });
 
