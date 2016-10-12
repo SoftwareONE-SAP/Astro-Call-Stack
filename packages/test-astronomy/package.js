@@ -14,8 +14,8 @@ Package.onUse(function(api) {
   api.versionsFrom('1.3.5.1');
   api.use('ecmascript');
 
-  api.use(  'jagi:astronomy@2.1.4');
-  api.imply('jagi:astronomy@2.1.4');
+  api.use(  'jagi:astronomy@=2.1.4');
+  api.imply('jagi:astronomy@=2.1.4');
 
   api.use(  'jagi:astronomy-timestamp-behavior@2.0.0');
   api.imply('jagi:astronomy-timestamp-behavior@2.0.0');
