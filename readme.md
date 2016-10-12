@@ -1,4 +1,5 @@
 # Astro-Call-Stack
+`METEOR@1.3.5.1`
 
 A simple test case to reproduce the call stack error.
 
