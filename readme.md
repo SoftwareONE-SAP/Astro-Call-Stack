@@ -11,16 +11,7 @@ W20161012-15:49:43.074(1)? (STDERR) RangeError: Maximum call stack size exceeded
 
 The bug inducing code can be found at `packages/test-astronomy/test-ast.js`
 
-Doesn't work
-``` javascript
-api.use(  'jagi:astronomy@=2.1.4');
-api.imply('jagi:astronomy@=2.1.4');
-```
+- `2.1.1`, `2.1.2`, `2.1.3`, `2.1.4`, All through the call stack error.
+- However `2.1.0` works fine.
 
-Works
-``` javascript
-api.use(  'jagi:astronomy@=2.1.0');
-api.imply('jagi:astronomy@=2.1.0');
-```
-
-To downgrade remove the `test-astronomy` and readd it.
+The astronomy version is set within the package.
